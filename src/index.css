@@ -1,0 +1,14 @@
+
+
+@import "tailwindcss";
+
+
+body{
+    background: black;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    
+}

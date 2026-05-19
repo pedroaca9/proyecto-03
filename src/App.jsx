@@ -1,30 +1,31 @@
 
-
-
-
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Certificaciones from './pages/certificaciones';
+import Inicio from './pages/inicio'; 
+  import './App.css'
 
 function App() {
   
 
   return (
     <>
-        <h1> HOLA</h1>
-      <div> 
-
-          <nav className="">
-            
-              <a className="" aria-current="page" href="#">Home</a>
-              <a className="" href="#">Features</a>
-              <a className="" href="#">Pricing</a>
-              <a className="" href="#" >contact</a>
-                     
-          </nav>
+      <Router>
+      <div className="App">
+       
+        <main>
+          <Routes>
+             <Route path="/" element={ <Inicio />} />
+             <Route path="/src/pages/certificaciones.jsx" element={<Certificaciones />}/>
+            {/* ... otras rutas */}
+          </Routes>
+        </main>
+      </div>
+    </Router>
         
       
-       </div>
+       
     </>
   )
 
 }
-export default App()
+export default App

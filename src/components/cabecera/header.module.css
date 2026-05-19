@@ -1,0 +1,22 @@
+
+
+
+/* Añadir a Menu.css */
+.nav-link.active {
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Mejora para el hover en móvil */
+@media (max-width: 768px) {
+  .nav-link {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  .nav-link.active {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+  }
+}
